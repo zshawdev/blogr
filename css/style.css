@@ -109,7 +109,8 @@
 ///DESIGN SECTION
 */ 
 .section-design {
-    padding: 12.6rem 0;
+    /* extra bottom padding, for now, unveils image's bottom detail */
+    padding: 21.6rem 0 31.6rem;
     max-width: 144rem;
     /* due to large height of image, needed */
     overflow-y: hidden;
