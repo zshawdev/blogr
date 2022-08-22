@@ -1,0 +1,131 @@
+:root {
+    /* COLOR */
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray: hsl(207, 13%, 34%);
+    --color-gray-2: hsl(240, 10%, 16%);
+
+    --color-heading: hsl(208, 49%, 24%);
+    --color-red: hsl(356, 100%, 66%);
+    --color-red-light: hsl(355, 100%, 74%);
+
+    --color-bg-red: hsl(13, 100%, 72%);
+    --color-bg-red-light: hsl(353, 100%, 62%);
+
+    --color-bg-dark: hsl(237, 23%, 32%);
+    --color-bg-dark-2: hsl(237, 17%, 21%);
+
+    --br-section: 2rem;
+
+    --padding-layout: 20rem;
+
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/* ///////////////////////////////////////////// */
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1;
+    min-height: 100vh;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 120rem;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    column-gap: 6.4rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr); /* same as writing 1fr, 1fr */
+}
+
+.grid--center-v {
+    align-items: center;
+}
+
+/*////////////////////////////////////////////////////////////
+///ELEMENTS
+*/ 
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+    color: var(--color-heading);
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+.heading-primary {
+    /* color: var(--color-white); */
+    font-size: 6.4rem;
+}
+
+.heading-secondary {
+    font-size: 4rem;
+}
+
+.heading-tertiary {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+}
+
+p {
+    color: var(--color-gray);
+    font-weight: 300;
+    line-height: 1.7;
+}
+
+.btn:link,
+.btn:visited {
+    color: inherit;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.6rem 1.8rem;
+    border-radius: 4rem;
+}
+
+.btn--color:link,
+.btn--color:visited {
+    background-color: var(--color-white);
+    border: .2rem solid var(--color-white);
+    color: var(--color-bg-red);
+}
+
+.btn--transparent:link,
+.btn--transparent:visited {
+    background-color: transparent;
+    border: .2rem solid currentColor;
+}
+
+
+/*////////////////////////////////////////////////////////////
+///UTILITY
+*/ 
+
+.u-text-align-center { text-align: center !important;}
+
+.u-margin-right { margin-right: 1.5rem !important; }
